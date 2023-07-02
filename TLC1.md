@@ -43,9 +43,13 @@ $0.6n - 1$ câu trả lời Có. Nếu số câu trả lời Có ít hơn, ta bi
     - Từ đây ta rút phương trình:
     
     $$E(n) = P * (n-1) + (1-P) * (n-1 + E(n))$$
+  
     $$ <=> E(n) - (1-P) * E(n) = P * (n-1) + (1-P) * (n-1)$$
-    $$ <=> P * E(n) - P * (1-P) * E(n) = P^2 * (n-1) + P * (1-P) * (n-1)$$ 
+  
+    $$ <=> P * E(n) - P * (1-P) * E(n) = P^2 * (n-1) + P * (1-P) * (n-1)$$
+  
     $$ <=> P^2 * E(n) = (n - 1) * P $$
+  
     $$ <=> E(n) = \frac{n-1}{P}  $$
 
     - Ngoài ra ta có thể giả sử xác suất để chọn ngẫu nhiên một người thật thà là xác suất để xác định được chắc chắn một người thật thà sau khi hỏi $n-1$ câu hỏi. Trong trường hợp xấu nhất, ta sẽ phải hỏi tất cả $n-1$ người còn lại mỗi khi ta chọn một người mới, và ta sẽ phải tiếp tục chọn lại cho đến khi bạn may mắn chọn được một người thật thà. Vì xác suất để chọn một người thật thà là 0.6, nên số lần ta chọn lại trung bình là $ 1/0.6 ≈ 1.67$. Do đó, số câu hỏi ta phải đặt trung bình trong trường hợp xấu nhất là $ (n-1)(1/0.6) ≈ 1.67(n-1)$ 
