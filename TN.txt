@@ -1,0 +1,49 @@
+(a) Để tìm xác suất để một người bị tăng huyết áp, biết rằng người đó nghiện thuốc lá nặng, ta cần sử dụng công thức xác suất có điều kiện: P(A|B) = P(A ∩ B)/P(B). Trong trường hợp này, A là biến cố "người đó bị tăng huyết áp" và B là biến cố "người đó nghiện thuốc lá nặng".
+
+P(A ∩ B) là xác suất để một người vừa bị tăng huyết áp vừa nghiện thuốc lá nặng. Theo dữ liệu, có 30 người vừa bị tăng huyết áp vừa nghiện thuốc lá nặng trong tổng số 180 người, vì vậy P(A ∩ B) = 30/180.
+
+P(B) là xác suất để một người nghiện thuốc lá nặng. Theo dữ liệu, có 30 + 19 = 49 người nghiện thuốc lá nặng trong tổng số 180 người, vì vậy P(B) = 49/180.
+
+Do đó, P(A|B) = P(A ∩ B)/P(B) = (30/180)/(49/180) = 30/49.
+
+(b) Để tìm xác suất để một người không hút thuốc, biết rằng người đó không bị tăng huyết áp, ta cần sử dụng công thức xác suất có điều kiện: P(A|B) = P(A ∩ B)/P(B). Trong trường hợp này, A là biến cố "người đó không hút thuốc" và B là biến cố "người đó không bị tăng huyết áp".
+
+P(A ∩ B) là xác suất để một người vừa không hút thuốc vừa không bị tăng huyết áp. Theo dữ liệu, có 48 người vừa không hút thuốc vừa không bị tăng huyết áp trong tổng số 180 người, vì vậy P(A ∩ B) = 48/180.
+
+P(B) là xác suất để một người không bị tăng huyết áp. Theo dữ liệu, có 48 + 26 + 19 = 93 người không bị tăng huyết áp trong tổng số 180 người, vì vậy P(B) = 93/180.
+
+Do đó, P(A|B) = P(A ∩ B)/P(B) = (48/180)/(93/180) = 48/93.
+
+
+-----------------------------------------
+(a) Xác suất để một người bị nhiễm bệnh sốt rét ở Guinea là 0.75. Vì tất cả các bệnh nhân đến khám đều là độc lập, nên xác suất để tất cả 6 người đều nhiễm bệnh là 0.75^6 = 0.17798.
+
+(b) Để tìm xác suất để tất cả 6 người đều nhiễm bệnh, biết có ít nhất 1 người nhiễm bệnh, ta cần sử dụng công thức xác suất có điều kiện: P(A|B) = P(A ∩ B)/P(B). Trong trường hợp này, A là biến cố "tất cả 6 người đều nhiễm bệnh" và B là biến cố "có ít nhất 1 người nhiễm bệnh".
+
+P(A ∩ B) là xác suất để tất cả 6 người đều nhiễm bệnh và có ít nhất 1 người nhiễm bệnh. Vì tất cả 6 người đều nhiễm bệnh thì chắc chắn có ít nhất 1 người nhiễm bệnh, nên P(A ∩ B) = P(A) = 0.75^6 = 0.17798.
+
+P(B) là xác suất để có ít nhất 1 người nhiễm bệnh. Điều này tương đương với xác suất để không có ai nhiễm bệnh trừ đi từ 1. Xác suất để một người không nhiễm bệnh sốt rét ở Guinea là 0.25. Vì tất cả các bệnh nhân đến khám đều là độc lập, nên xác suất để không có ai trong số 6 người nhiễm bệnh là 0.25^6. Do đó, P(B) = 1 - 0.25^6.
+
+--------------------
+
+Xác suất để C chọn được cánh cửa có chiếc xe là 1/4.
+
+Đây là cách tính: Xác suất để A không chọn được cánh cửa có chiếc xe là 3/4. Nếu A không chọn được cánh cửa có chiếc xe, thì xác suất để B không chọn được cánh cửa có chiếc xe là 2/3. Nếu cả A và B đều không chọn được cánh cửa có chiếc xe, thì xác suất để C chọn được cánh cửa có chiếc xe là 1/2. Do đó, xác suất để C chọn được cánh cửa có chiếc xe là (3/4)(2/3)(1/2) = 1/4.
+
+-----------------
+
+Để tìm xác suất để một người mắc bệnh ung thư, biết rằng kết quả xét nghiệm của người đó dương tính, ta cần sử dụng công thức Bayes: P(D+|T+) = P(T+|D+)P(D+)/[P(T+|D+)P(D+) + P(T+|D−)P(D−)].
+
+Trong trường hợp này, D+ là biến cố "người đó mắc bệnh ung thư" và T+ là biến cố "kết quả xét nghiệm của người đó dương tính".
+
+P(T+|D+) là xác suất để kết quả xét nghiệm dương tính, biết rằng người đó mắc bệnh ung thư. Đây chính là độ nhạy của xét nghiệm, vì vậy P(T+|D+) = 0.99.
+
+P(D+) là xác suất để một người mắc bệnh ung thư. Tỷ lệ mắc bệnh ung thư trong tổng dân số của một nước được ước tính là 0.005, vì vậy P(D+) = 0.005.
+
+P(T+|D−) là xác suất để kết quả xét nghiệm dương tính, biết rằng người đó không mắc bệnh ung thư. Đây chính là 1 trừ đi độ đặc hiệu của xét nghiệm, vì vậy P(T+|D−) = 1 - 0.98 = 0.02.
+
+P(D−) là xác suất để một người không mắc bệnh ung thư. Vì P(D+) + P(D−) = 1, nên P(D−) = 1 - P(D+) = 1 - 0.005 = 0.995.
+
+Do đó, P(D+|T+) = P(T+|D+)P(D+)/[P(T+|D+)P(D+) + P(T+|D−)P(D−)] = (0.99)(0.005)/[(0.99)(0.005) + (0.02)(0.995)].
+
+==================================
