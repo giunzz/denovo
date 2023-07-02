@@ -2,7 +2,7 @@
 
 ### **CÂU 2** 
 
-#### *(a) Trung nhìn 3 viên kẹo và đoán chính xác vị của 2 viên. Hỏi nếu như Trung hoàn toàn đoán bừa thì xác suất của sự kiện này là bao nhiêu? Để xác minh rằng Trung có khả năng đoán kẹo thần kỳ, Linh đã thiết lập hai giả thuyết $H_0$ và $H_1$. $H_0$ tương ứng với việc Trung chỉ đoán bừa. $H1$ tương ứng việc Trung có năng lực đặc biệt.*
+#### *(a) Trung nhìn 3 viên kẹo và đoán chính xác vị của 2 viên. Hỏi nếu như Trung hoàn toàn đoán bừa thì xác suất của sự kiện này là bao nhiêu? Để xác minh rằng Trung có khả năng đoán kẹo thần kỳ, Linh đã thiết lập hai giả thuyết $H_0$ và $H_1$ . $H_0$ tương ứng với việc Trung chỉ đoán bừa. $H1$ tương ứng việc Trung có năng lực đặc biệt.*
 
 - Theo đề Trung và Linh có một hộp kẹo gồm nhiều viên kẹo giống nhau với 5
 hương vị khác nhau.
