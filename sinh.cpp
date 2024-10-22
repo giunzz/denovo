@@ -108,8 +108,8 @@ int main()
 	// }
 	for (int i=0; i<800; i++) 
     {
-		ll n = 500;
-		ll k = 2;
+		ll n = 10;
+		ll k = randint(2,5);
 		ll tl_lap = randint(0,100);
 		char filename[128];
 		sprintf(filename, "%03d", i);

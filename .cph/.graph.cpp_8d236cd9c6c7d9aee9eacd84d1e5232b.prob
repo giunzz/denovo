@@ -1,0 +1,1 @@
+{"name":"Local: graph","url":"c:\\Users\\ASUS\\Documents\\GitHub\\MineSweeper_Python\\Pima\\graph.cpp","tests":[{"id":1725648882844,"input":"10 6\nTCTTTG\nTGTCTA\nTTTGTC\nTTGTCT\nCTTTGT","output":"TCTTTGTCTA"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ASUS\\Documents\\GitHub\\MineSweeper_Python\\Pima\\graph.cpp","group":"local","local":true}
