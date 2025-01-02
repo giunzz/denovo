@@ -20,7 +20,7 @@ void gen_st(const string &fileid, ll n , ll k)
     for (int i = 1 ; i <= n ; i++)
 	{
 		ll tmp = randint(0, 3);
-		string kkk = "ATGC";
+		string kkk = "ATGC"; 
 		g += kkk[tmp];
 	}
 	vector<string> gstring;

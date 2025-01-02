@@ -66,7 +66,7 @@ int main()
     ios_base :: sync_with_stdio(0);
     cin.tie(0); cout.tie(0);
 
-    bspow[0] = 1;
+    bspow[0] = 1; // Hash
     for (int i = 1; i < N; ++i)
         bspow[i] = bspow[i - 1] * bs % MOD;
 	
@@ -97,13 +97,15 @@ int main()
     for (int i = 0; i < strnum; ++i)
     {
         head[i] = lower_bound(nen.begin(), nen.end(), head[i]) - nen.begin();
-        str[head[i]] = {i, 0};
+        str[head[i]] = {i, 0}; // đánh dấu
         tail[i] = lower_bound(nen.begin(), nen.end(), tail[i]) - nen.begin();
         str[tail[i]] = {i, 1};
 
-        adj[head[i]].push_back({tail[i], id++});
+        adj[head[i]].push_back({tail[i], id++}); // Xây dựng đồ thị
         ideg[tail[i]]++;
         odeg[head[i]]++;
+        //cerr << head[i] << " " << tail[i] << endl;
+
     }
 
     int st_vertex = 0;
@@ -121,17 +123,16 @@ int main()
         }
     }
 
-    path.push(st_vertex);
+    path.push(st_vertex); //đỉnh bắt đầu
     while(!path.empty())
     {
         int u = path.top();
         bool k = 0;
         for (int i = dau[u]; i < adj[u].size(); i++)
-            if (!dd[adj[u][i].se])
-            {
-                dd[adj[u][i].se] = 1;
-                dau[u] = i + 1; k = 1;
-                path.push (adj[u][i].fi);
+            if (!dd[adj[u][i].se]) {   // Kiểm tra xem cạnh chưa được đi qua.
+                dd[adj[u][i].se] = 1;   // Đánh dấu cạnh này đã đi qua.
+                dau[u] = i + 1; k = 1;  // Cập nhật chỉ số cạnh chưa đi qua tiếp theo từ đỉnh `u`.
+                path.push(adj[u][i].fi);  // Đẩy đỉnh đích của cạnh vào ngăn xếp để tiếp tục duyệt.
                 break;
             }
         if (!k) {res.push_back(u); path.pop();}
