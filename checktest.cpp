@@ -3,8 +3,8 @@
 #include<thread>
 using namespace std;
 
-#define numTest 800
-#define Name "DNA"
+#define numTest 10
+#define Name "graph"
 
 int cnt[10005];
 
@@ -37,9 +37,8 @@ int main(){
 				<< std::chrono::duration<double, std::milli>(t_end-t_start).count()
 				<< " ms\n";
 	}
-	for (int i = 0; i <= 799 / 50; ++i)
-	{
-		cout << (i + 1) * 2  << " " << cnt[i] << '\n';
+	for(int i = 0; i < numTest / 50; ++i){
+		cout << "Test " << i * 50 << " -> " << (i + 1) * 50 << ": " << cnt[i] << "/" << 50 << endl;
 	}
 	cout << "AC: " << total << "/" << numTest;
 
